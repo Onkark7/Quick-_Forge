@@ -1,0 +1,128 @@
+
+.row {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(31, 31, 40);
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center;
+    justify-content: center;
+}
+
+.head{
+
+    width: 95%;
+    background-color: rgb(58, 58, 72);
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(243, 240, 240, 0.1);
+    color: white;
+    box-sizing: border-box;
+    height: 80px;
+    
+
+}
+
+.icon
+{
+    margin-left: 85%;
+}
+.logo
+{
+    color: rgb(255, 108, 55);
+    font-family: open-sans;
+    font-weight: 800;
+    font-size: 24px;
+    margin-top: 3px;
+}
+.cards {
+    width: 95%;
+    background-color: rgb(58, 58, 72);
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(243, 240, 240, 0.1);
+    color: white;
+    top: 0;
+    box-sizing: border-box;
+    height: 70%;
+    margin-top: 1%;
+}
+
+.tabs{
+    margin-top: 68px;
+   
+}
+.tab {
+    width: 90px;
+    height: 40px;
+    background-color: rgb(58, 58, 72);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px; /* Adjusted margin between tabs */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.tab:hover {
+    background-color: rgb(78, 78, 92); /* Darker color on hover */
+}
+
+.innercard {
+    height: 40%;
+    width: 20%;
+    border-radius: 15px;
+    border: 1px solid #ffffff;
+    background: rgba(255, 255, 255, 0.1); /* Transparent background with a hint of white */
+    margin-top: 3%;
+    margin-left: 3%;
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    transition: backdrop-filter 0.3s ease; /* Smooth transition on hover or other state changes */
+}
+
+.innercard:hover {
+    backdrop-filter: blur(20px); /* Increase the blur on hover for a more pronounced effect */
+}
+
+
+
+
+
+@media (max-width: 576px) {
+    .head
+    {
+        height: 15%;
+        margin-top: -15%;
+    }
+    .cards {
+
+        margin-top:5%
+        
+    }
+    .tabs
+    {
+        margin-top: 45px;
+    }
+    .tab
+    {
+        width: 70px;
+    }
+
+    .icon
+    {
+        margin-left: 57%;
+    }
+
+   
+}
+
+@media (min-width: 576px) {
+    .head {
+        height: 20%;
+       
+    }
+
+    .tabs
+    {
+        margin-top: 35px;
+    }
+}
